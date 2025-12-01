@@ -5,7 +5,7 @@ spring:
   data:
     mongodb:
       # Use env variable in real env, fallback only for local simple dev
-      uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/econe}
+      uri: mongodb+srv://ayush_o4:qwertyuiop@testing.kdodfsw.mongodb.net/econe?retryWrites=true&w=majority&appName=testing
       auto-index-creation: true
 
   mail:
