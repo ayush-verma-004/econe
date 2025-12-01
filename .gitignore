@@ -1,3 +1,4 @@
+# --- EXISTING RULES (kept as you have them) ---
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -14,7 +15,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -31,3 +32,27 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# --- IMPORTANT NEW ADDITIONS ---
+# Env variables (NEVER push secrets)
+.env
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java compiled output
+*.class
+
+# Maven Wrapper files
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Node (if you add React later)
+node_modules/
+dist/
