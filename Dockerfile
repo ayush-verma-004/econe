@@ -19,9 +19,6 @@ WORKDIR /app
 # Copy built JAR from previous stage
 COPY --from=build /app/target/*.jar app.jar
 
-# Render will set PORT env automatically (required)
-ENV PORT=8080
-
 EXPOSE 8080
 
 # Start the app
